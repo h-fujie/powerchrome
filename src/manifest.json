@@ -1,0 +1,16 @@
+{
+    "name": "Power Chrome",
+    "version": "0.0.0.1",
+    "manifest_version": 3,
+    "description": "パワー",
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": [
+                "power.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": false
+        }
+    ]
+}
