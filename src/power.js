@@ -35,7 +35,18 @@ $(() => {
     let hideExplosion = function() {
         $bomb.css("display", "none");
     };
-    $("input[type='text'], textarea").on("keydown", function() {
+    $("input[type='text']"
+        + ", input[type='date']"
+        + ", input[type='datetime-local']"
+        + ", input[type='email']"
+        + ", input[type='month']"
+        + ", input[type='number']"
+        + ", input[type='search']"
+        + ", input[type='tel']"
+        + ", input[type='time']"
+        + ", input[type='url']"
+        + ", input[type='week']"
+        + ", textarea").on("keydown", function() {
         showRumble(this);
         showExplosion(this);
     });
