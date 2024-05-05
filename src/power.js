@@ -5,7 +5,7 @@ import "./power.css"
 "use strict";
 $(() => {
     let $bomb = $("<span>")
-        .addClass("bomb")
+        .addClass("fj-bomb")
         .css({
             position: "absolute",
             display: "none"
@@ -14,11 +14,11 @@ $(() => {
     let rumbleTimer = null;
     let showRumble = function(el) {
         clearTimeout(rumbleTimer);
-        $(document.body).addClass("shake");
+        $(document.body).addClass("fj-shake");
         rumbleTimer = setTimeout(hideRumble, 200);
     };
     let hideRumble = function() {
-        $(document.body).removeClass("shake");
+        $(document.body).removeClass("fj-shake");
     };
     let explosionTimer = null;
     let showExplosion = function(el) {
