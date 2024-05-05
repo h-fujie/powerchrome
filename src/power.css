@@ -29,6 +29,7 @@
     height: 100px;
     overflow: hidden;
     position: absolute;
+    z-index: 2147483647;
 }
 .bomb:after {
     width: 1000px;
